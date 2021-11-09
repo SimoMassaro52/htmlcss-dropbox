@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <div class="headbox">
-            <div class="logo">
+        <div class="headbox cleafix">
+            <div class="headerlogo">
                <a href="#"><img src="images/logo-small.png" alt=""></a>
             </div>
             <div class="navrowleft">
@@ -32,7 +32,7 @@
         </div>
     </header>
         <section>
-            <div class="topbox">
+            <div class="topbox clearfix">
                 <div class="topspacer">              
                     <h1> Tutto ciò che ti serve per il lavoro, in un unico posto. </h1>
                     <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
@@ -40,7 +40,9 @@
                         <a href="#"> Inizia la tua prova gratuita </a>
                     </div>
                     <span> Annulla in qualsiasi momento </span>
-                    <i class="fas fa-arrow-down"></i>
+                    <a href="#freetrial">
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
                     <img src="images/jumbo.png" alt="">
                 </div>         
             </div>
@@ -48,15 +50,19 @@
     <main>
         <div class="spacer">    
             <div class="box">        
-                <section>
+                <section id="freetrial">
                     <h1>Trova il piano Dropbox Business che fa per te</h1>
-                    <form>
-                        <input type="radio">
-                        <label for=""> Fatturazione mensile </label>
-                        <input type="radio">
-                        <label for=""> Fatturazione annuale </label>
-                    </form>
-                    <div class="columnbox">
+                    <div class="radiospacer">
+                        <label class="radiobox"> Fatturazione mensile 
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="radioswitch"></span>
+                        </label>
+                        <label class="radiobox"> Fatturazione annuale
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="radioswitch"></span>
+                        </label>    
+                    </div>
+                    <div class="columnbox clearfix">
                         <div class="col">
                             <div class="titlebox">
                                 <span> <i class="far fa-user"></i> Singolo </span>
@@ -65,7 +71,7 @@
                                 <h2> Professional </h2>
                                 <h3> 19,99 € </h3>
                                 <span> /mese</span>
-                                <span> <i class="far fa-user"></i> 1 utente </span>
+                                <span><i class="far fa-user"></i> 1 utente </span>
                                 <span><i class="far fa-folder"></i> 3 TB di spazio di archiviazione sicuro </span>
                                 <span><i class="fas fa-pencil-alt"></i> Funzioni di produttività premium e condivisione file semplice e sicura </span>
                                 <div class="button">
@@ -74,11 +80,13 @@
                                 <span> oppure <a href="#"> acquista ora </a></span>
                                 <hr>
                                 <h4> Punti salienti del piano </h4>
-                                <span><i class="fas fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</span>
-                                <span><i class="fas fa-check"></i> Cartelle offline su dispositivi mobili </span>
-                                <span><i class="fas fa-check"></i> Pulizia remota dell'account </span>
-                                <span><i class="fas fa-check"></i> Filigrana documento </span>
-                                <span><i class="fas fa-check"></i> Assistenza prioritaria via email e chat</span>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Invia file fino a 100 GB con Dropbox Transfert</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Cartelle offline su dispositivi mobili </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Pulizia remota dell'account </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Filigrana documento </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Assistenza prioritaria via email e chat</li> 
+                                </ul>    
                             </div>
                         </div>
                         <div class="col">
@@ -98,12 +106,14 @@
                                 <span> oppure <a href="#"> acquista ora </a></span>
                                 <hr>
                                 <h4> Punti salienti del piano </h4>
-                                <span><i class="fas fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</span>
-                                <span><i class="fas fa-check"></i> Cartelle offline su dispositivi mobili </span>
-                                <span><i class="fas fa-check"></i> Pulizia remota dell'account </span>
-                                <span><i class="fas fa-check"></i> Filigrana documento </span>
-                                <span><i class="fas fa-check"></i> Assistenza prioritaria via email e chat</span> 
-                                <span><i class="fas fa-check"></i> Assistenza prioritaria via email e chat</span> 
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Invia file fino a 100 GB con Dropbox Transfert</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Cartelle offline su dispositivi mobili </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Pulizia remota dell'account </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Filigrana documento </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Assistenza prioritaria via email e chat</li> 
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Assistenza prioritaria via email e chat</li>
+                                </ul>    
                             </div>
                         </div>
                         <div class="col">
@@ -123,12 +133,14 @@
                                 <span> oppure <a href="#"> acquista ora </a></span>
                                 <hr>
                                 <h4> Punti salienti del piano </h4>
-                                <span><i class="fas fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</span>
-                                <span><i class="fas fa-check"></i> Cartelle offline su dispositivi mobili </span>
-                                <span><i class="fas fa-check"></i> Pulizia remota dell'account </span>
-                                <span><i class="fas fa-check"></i> Filigrana documento </span>
-                                <span><i class="fas fa-check"></i> Assistenza prioritaria via email e chat</span> 
-                                <span><i class="fas fa-check"></i> Assistenza prioritaria via email e chat</span> 
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Invia file fino a 100 GB con Dropbox Transfert</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Cartelle offline su dispositivi mobili </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Pulizia remota dell'account </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Filigrana documento </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Assistenza prioritaria via email e chat</li> 
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Assistenza prioritaria via email e chat</li>
+                                </ul>    
                             </div>
                         </div>
                     </div> 
@@ -136,7 +148,7 @@
                             <div class="titlebox">
                                 <span> <i class="far fa-building"></i> Team </span>
                             </div>    
-                            <div class="columncontent">
+                            <div class="columncontent clearfix">
                                 <div class="button">
                                     <a href="#"> Contatta l'ufficio vendite </a>
                                 </div>
@@ -147,7 +159,7 @@
                         </div>     
                 </section>
                 <section>
-                    <div class="partnerbox">
+                    <div class="partnerbox clearfix">
                         <img src="images/partner.png" alt="">
                         <div class="textbox">
                             <h2> Entra in contatto con un partner Dropbox </h2>
@@ -159,7 +171,7 @@
                     </div>
                 </section> 
                 <section>
-                    <div class="businessbox">
+                    <div class="businessbox clearfix">
                         <h1> Esegui più operazioni con Dropbox Business</h1>
                         <div class="row">
                             <div class="card">
@@ -217,8 +229,8 @@
                     <h1> Più di 500.000 team utilizzano Dropbox Business</h1>
                     <a href="#"> Scopri di più sui nostri clienti</a>
                 </div>
-                <div class="teamsbox">
-                    <div class="left">
+                <div class="teamsbox cleafix">
+                    <div class="left cleafix">
                        <div class="square">
                             <img src="images/designit.svg" alt="">
                        </div>
@@ -238,9 +250,15 @@
                             <hr>
                             <p> "I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte situazioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
                             <span> Morten Thomsen, Global IT Lead</span>
+                            <hr>
+                            <p> "I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte situazioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
+                            <span> Morten Thomsen, Global IT Lead</span>
+                            <hr>
+                            <p> "I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte situazioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
+                            <span> Morten Thomsen, Global IT Lead</span>
                         </div>    
                     </div>
-                    <div class="right">
+                    <div class="right clearfix">
                         <div class="square">
                             <img src="images/world_bicycle_relief.svg" alt="">
                        </div>
@@ -254,7 +272,7 @@
                             <img src="images/clear_channel.svg" alt="">
                         </div>
                     </div>
-                    <div class="teamsfooter">
+                    <div class="teamsfooter clearfix">
                         <h2> Porta Dropbox Business nella tua azienda. </h1>
                         <div class="button">
                             <a href="#"> Inizia la tua prova gratuita </a>
@@ -265,18 +283,44 @@
         </section>
         <div class="spacer">
             <section>
-                <div class="questionbox"> 
-                    <h2> Domande frequenti</h2>
-                    <hr>
-                    <h4> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?  <i class="fas fa-angle-down"></i></h4>
-                    <hr>
-                    <h4> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?  <i class="fas fa-angle-down"></i></h4>
-                    <hr>
-                    <h4> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?  <i class="fas fa-angle-down"></i></h4>       
-                    <hr>
-                    <h4> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?  <i class="fas fa-angle-down"></i></h4>
-                    <hr>    
-                </div>
+                <div class="questionbox">     
+                    <h2> Domande frequenti</h2> 
+                     <hr>   
+                    <div class="faq">
+                        <div>    
+                            <input type="radio" name="faqqordion" id="section1" class="faqqordioninput">
+                            <label for="section1" class="faqqordionlabel"><h4> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h4></label>
+                            <div class="faqqordioncontent">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur recusandae cupiditate cum ad iste dolorum sed id quis eum expedita, ratione quidem! Eos vitae debitis et nisi architecto rem?</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>    
+                            <input type="radio" name="faqqordion" id="section2" class="faqqordioninput">
+                            <label for="section2" class="faqqordionlabel"><h4> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h4></label>
+                            <div class="faqqordioncontent">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur recusandae cupiditate cum ad iste dolorum sed id quis eum expedita, ratione quidem! Eos vitae debitis et nisi architecto rem?</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>    
+                            <input type="radio" name="faqqordion" id="section3" class="faqqordioninput">
+                            <label for="section3" class="faqqordionlabel"><h4> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h4></label>
+                            <div class="faqqordioncontent">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur recusandae cupiditate cum ad iste dolorum sed id quis eum expedita, ratione quidem! Eos vitae debitis et nisi architecto rem?</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>    
+                            <input type="radio" name="faqqordion" id="section4" class="faqqordioninput">
+                            <label for="section4" class="faqqordionlabel"><h4> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h4></label>
+                            <div class="faqqordioncontent">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur recusandae cupiditate cum ad iste dolorum sed id quis eum expedita, ratione quidem! Eos vitae debitis et nisi architecto rem?</p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>            
+                </div>      
             </section>  
         </div>
     </main>    
