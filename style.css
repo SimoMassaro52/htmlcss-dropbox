@@ -384,7 +384,7 @@ h1{
 }
 
 .teamsbox{
-    height: 100vh;
+    height: 30vw;
     width: 100%;
     background-color: #b4d0e7;
 }
@@ -396,7 +396,7 @@ h1{
 .teamsbox > *{
     float: left;
     width: calc(100%/3);
-    height: calc(100%/1.4);
+    height: 100%;
 }
 
 .square{
